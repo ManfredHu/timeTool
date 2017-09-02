@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>timeTool工具模块</title>
+</head>
+<body>
+	<h1>Please open Developer Tools and check console</h1>
+	<script type="text/javascript" src="../src/TimeTool.js"></script>
+	<script type="text/javascript">
+		console.log("getTime:"+TimeTool.getTime());
+		console.log("getDate:"+TimeTool.getDate());
+		console.log("getDay:"+TimeTool.getDay());
+		console.log("getMonth:"+TimeTool.getMonth());
+		console.log("getFullYear:"+TimeTool.getFullYear());
+		console.log("getHours:"+TimeTool.getHours());
+		console.log("getMinutes:"+TimeTool.getMinutes());
+		console.log("getSecords:"+TimeTool.getSecords());
+		console.log("getDateFormat:"+TimeTool.getDateFormat());
+		console.log("getDateFormat:"+TimeTool.getDateFormat({character: '-'}));
+		console.log("getDateFormat:"+TimeTool.getDateFormat({character: '/'}));
+		console.log("getTimeFormat:"+TimeTool.getTimeFormat());
+		console.log("getTimeFormat:"+TimeTool.getTimeFormat({character: '-'}));
+		console.log("getTimeFormat:"+TimeTool.getTimeFormat({character: '/'}));
+		console.log("getDateAndTimeFormat:"+TimeTool.getDateAndTimeFormat());
+		console.log("getDateAndTimeFormat:"+TimeTool.getDateAndTimeFormat({dateCharacter: '-',timeCharacter: ':'}));
+		console.log("getDateAndTimeFormat:"+TimeTool.getDateAndTimeFormat({dateCharacter: '/',timeCharacter: ':',dateTimeSplit: '-'}));
+		// getTime:1504342639813
+		// getDate:2
+		// getDay:7
+		// getMonth:9
+		// getFullYear:2017
+		// getHours:16
+		// getMinutes:57
+		// getSecords:19
+		// getDateFormat:20170902
+		// getDateFormat:2017-09-02
+		// getDateFormat:2017/09/02
+		// getTimeFormat:165719
+		// getTimeFormat:16-57-19
+		// getTimeFormat:16/57/19
+		// getDateAndTimeFormat:20170902 165719
+		// getDateAndTimeFormat:2017-09-02 16:57:19
+		// getDateAndTimeFormat:2017/09/02-16:57:19
+	</script>
+</body>
+</html>
